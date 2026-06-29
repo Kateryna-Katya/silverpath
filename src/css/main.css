@@ -291,6 +291,9 @@ width: 427px;
 }  
 }
 /* Reviews */
+.reviews-section{
+background: linear-gradient(180deg, #0d41c9 0%, #0a319a 100%);
+}
 .reviews-swiper{
     margin-top: 32px;
 }
@@ -330,5 +333,49 @@ font-family: "Lilita One", sans-serif;
 
     .author {
 font-size: 28px;
+    }
+}
+/* Advantages */
+.advantages-wrapper{
+    background-image: url("/img/advantages/mob.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    border-radius: 32px;
+        padding: 32px 16px;
+        width: 343px;
+        height: 712px;
+}
+.advantages-list{
+    margin-top: 32px;
+display: flex;
+flex-wrap: wrap;
+gap: 16px;
+justify-content: center;
+}
+.advantages-item{
+width: 147px;
+    height: 169px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+@media only screen and (min-width: 1440px) {
+.advantages-wrapper {
+        background-image: url("/img/advantages/desk.png");
+    padding: 56px;
+    width: 1312px;
+    height: 428px;
+    }
+
+    .advantages-list {
+        margin-top: 40px;
+        gap: 32px;
+    }
+
+    .advantages-item {
+width: 173px;
+    height: 175px;
     }
 }
