@@ -235,4 +235,61 @@ width: 416px;
 font-size: 28px;
 }    
 }
-    
+/* Gameplay Highlights */
+.highlights-container{
+    padding-top: 0;
+}
+.highlights-wrapper{
+    background-image: url("/img/highlights/mob.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    width: 343px;
+    height: 1068px;
+padding: 234px 24px 32px;
+}
+.highlights-list{
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.highlights-item{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+.highlights-img{
+    width: 60px;
+    height: 60px;
+}
+.highlights-text{
+    text-align: left;
+}
+@media only screen and (min-width: 1440px) {
+.highlights-wrapper{
+    background-image: url("/img/highlights/desk.png");
+width: 1312px;
+    height: 1052px;
+padding: 503px 56px 56px;
+}
+.highlights-list{
+    margin-top: 40px;
+flex-direction: row;
+justify-content: center;
+flex-wrap: wrap;
+    gap: 32px;
+}
+.highlights-item{
+width: 427px;
+    height: 96px;
+    align-items: start;
+}
+.highlights-img{
+    width: 96px;
+    height: 96px;
+}
+.highlights-text{
+    text-align: left;
+}    
+}
