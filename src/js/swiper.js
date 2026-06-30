@@ -52,10 +52,16 @@ function initGallerySwiper() {
       disableOnInteraction: false,
     },
 
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
+pagination: {
+  el: '.gallery-pagination',
+  clickable: true,
+  bulletClass: 'gallery-bullet',
+  bulletActiveClass: 'gallery-bullet-active',
+
+  renderBullet(index, className) {
+    return `<button class="${className}" aria-label="Slide ${index + 1}"></button>`;
+  },
+},
   });
 }
 
